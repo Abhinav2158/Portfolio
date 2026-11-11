@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cyclone Track Prediction — Abhinav Attri</title>
+<meta name="description" content="Abhinav Attri — M.Tech (AI for Sustainability) at IIT Kanpur. AI-physics hybrid modelling, computer vision, and agentic AI.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Manrope:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script>try{if(sessionStorage.getItem('theme')==='dark')document.documentElement.dataset.theme='dark'}catch(e){}</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="sub-page">
+
+<canvas id="bg" aria-hidden="true"></canvas>
+<div id="progress"></div>
+<header class="nav">
+  <a href="index.html" class="brand">AA<span>.</span></a>
+  <nav>
+    <a href="index.html#top">Home</a>
+    <a href="index.html#research">Research</a>
+    <a href="index.html#projects">Projects</a>
+    <a href="index.html#education">Education</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+  <div class="nav-right">
+    <button id="theme" class="theme" type="button" role="switch" aria-checked="false" aria-label="Night theme" title="Toggle night theme">
+      <span class="ico sun">☀</span><span class="ico moon">☾</span><span class="knob"></span>
+    </button>
+    <a class="btn small" href="assets/Abhinav_Resume.pdf" download>Resume ↓</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="page">
+  <a class="back reveal" href="index.html#projects">← Back to projects</a>
+  <h1 class="reveal">Cyclone Track Prediction</h1>
+  <p class="lead reveal">Multi-horizon trajectory forecasting</p>
+  <div class="overview reveal"><h4>Overview</h4><p>A multi-horizon cyclone trajectory forecasting system that predicts cyclone positions at 6–72 h lead times from 149 physics-informed spatio-temporal features and coordinate-displacement targets.</p></div>
+  <div class="metrics reveal"><div><b>11.09 km</b><span>RMSE at 6 h</span></div><div><b>60.87 km</b><span>MAE at 24 h</span></div><div><b>40.9%</b><span>RMSE reduction vs Ridge (up to)</span></div><div><b>149</b><span>engineered features</span></div></div>
+  <div class="detail"><div class="card reveal"><span class="mono">01</span><h3>Feature engineering</h3><p>Kinematic, intensity, rotational, lagged and multi-scale temporal features — including Coriolis dynamics, angular momentum, velocity trends, pressure gradients and distance-to-land.</p></div><div class="card reveal"><span class="mono">02</span><h3>Modelling</h3><p>Seven ML models plus ensemble learning, benchmarked under a strict 1980–2019 train / 2020–2025 test split.</p></div><div class="card reveal"><span class="mono">03</span><h3>Result</h3><p>Up to 40.9% lower RMSE than a Ridge baseline.</p></div></div>
+  <div class="cta reveal"><a class="btn" href="https://github.com/Abhinav2158/Cyclone_Track_Prediction" target="_blank" rel="noopener">View code on GitHub ↗</a><a class="btn ghost" href="index.html#projects">← All projects</a></div>
+</section>
+</main>
+
+<footer>© <span id="yr"></span> Abhinav Attri · IIT Kanpur</footer>
+<script src="script.js"></script>
+</body>
+</html>

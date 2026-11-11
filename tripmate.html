@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TripMate-AI — Abhinav Attri</title>
+<meta name="description" content="Abhinav Attri — M.Tech (AI for Sustainability) at IIT Kanpur. AI-physics hybrid modelling, computer vision, and agentic AI.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Manrope:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script>try{if(sessionStorage.getItem('theme')==='dark')document.documentElement.dataset.theme='dark'}catch(e){}</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="sub-page">
+
+<canvas id="bg" aria-hidden="true"></canvas>
+<div id="progress"></div>
+<header class="nav">
+  <a href="index.html" class="brand">AA<span>.</span></a>
+  <nav>
+    <a href="index.html#top">Home</a>
+    <a href="index.html#research">Research</a>
+    <a href="index.html#projects">Projects</a>
+    <a href="index.html#education">Education</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+  <div class="nav-right">
+    <button id="theme" class="theme" type="button" role="switch" aria-checked="false" aria-label="Night theme" title="Toggle night theme">
+      <span class="ico sun">☀</span><span class="ico moon">☾</span><span class="knob"></span>
+    </button>
+    <a class="btn small" href="assets/Abhinav_Resume.pdf" download>Resume ↓</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="page">
+  <a class="back reveal" href="index.html#projects">← Back to projects</a>
+  <h1 class="reveal">TripMate-AI</h1>
+  <p class="lead reveal">Agentic travel planner</p>
+  <div class="overview reveal"><h4>Overview</h4><p>TripMate-AI is a multi-agent travel planner built on LangGraph. A Supervisor coordinates specialist agents, Guardrails keep requests in scope, and the traveller iteratively refines the plan.</p></div>
+  
+  <div class="detail"><div class="card reveal"><span class="mono">01</span><h3>Agents</h3><p>Supervisor, Guardrails and specialised agents for transit, hotels, weather and budget-aware itinerary generation, with dynamic destination discovery and recommendation.</p></div><div class="card reveal"><span class="mono">02</span><h3>Orchestration</h3><p>Stateful MCP tool orchestration with parallel agent execution, structured outputs and multi-provider LLM fallbacks.</p></div><div class="card reveal"><span class="mono">03</span><h3>Ranking and refinement</h3><p>Deterministic preference-based ranking, with human-in-the-loop iterative plan refinement.</p></div></div>
+  <div class="cta reveal"><a class="btn" href="https://github.com/Abhinav2158/TripMate-AI" target="_blank" rel="noopener">View code on GitHub ↗</a><a class="btn ghost" href="index.html#projects">← All projects</a></div>
+</section>
+</main>
+
+<footer>© <span id="yr"></span> Abhinav Attri · IIT Kanpur</footer>
+<script src="script.js"></script>
+</body>
+</html>

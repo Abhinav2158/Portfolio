@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gradewise AI — Abhinav Attri</title>
+<meta name="description" content="Abhinav Attri — M.Tech (AI for Sustainability) at IIT Kanpur. AI-physics hybrid modelling, computer vision, and agentic AI.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Manrope:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script>try{if(sessionStorage.getItem('theme')==='dark')document.documentElement.dataset.theme='dark'}catch(e){}</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="sub-page">
+
+<canvas id="bg" aria-hidden="true"></canvas>
+<div id="progress"></div>
+<header class="nav">
+  <a href="index.html" class="brand">AA<span>.</span></a>
+  <nav>
+    <a href="index.html#top">Home</a>
+    <a href="index.html#research">Research</a>
+    <a href="index.html#projects">Projects</a>
+    <a href="index.html#education">Education</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+  <div class="nav-right">
+    <button id="theme" class="theme" type="button" role="switch" aria-checked="false" aria-label="Night theme" title="Toggle night theme">
+      <span class="ico sun">☀</span><span class="ico moon">☾</span><span class="knob"></span>
+    </button>
+    <a class="btn small" href="assets/Abhinav_Resume.pdf" download>Resume ↓</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="page">
+  <a class="back reveal" href="index.html#projects">← Back to projects</a>
+  <h1 class="reveal">Gradewise AI</h1>
+  <p class="lead reveal">Intelligent automated grading system</p>
+  <div class="overview reveal"><h4>Overview</h4><p>Gradewise AI grades written answers the way a careful examiner would: by pointing to the evidence. Each question is decomposed into atomic rubrics, and several models must agree on the exact span of the answer that satisfies each one.</p></div>
+  <div class="metrics reveal"><div><b>0.8620</b><span>Quadratic Weighted Kappa</span></div><div><b>3</b><span>models in consensus</span></div></div>
+  <div class="detail"><div class="card reveal"><span class="mono">01</span><h3>Evidence extraction</h3><p>Combines an LLM, DeBERTa-v3 and Sentence-MPNet for consensus-based, character-level span extraction against each atomic rubric.</p></div><div class="card reveal"><span class="mono">02</span><h3>Confidence-gated scoring</h3><p>A scoring heuristic built on span Jaccard overlap, score variance and lexical grounding decides how much to trust each automated grade.</p></div><div class="card reveal"><span class="mono">03</span><h3>Human-in-the-loop</h3><p>Submissions the system is uncertain about are routed automatically to a human reviewer.</p></div></div>
+  <div class="cta reveal"><a class="btn" href="https://github.com/Abhinav2158/Gradewise_AI" target="_blank" rel="noopener">View code on GitHub ↗</a><a class="btn ghost" href="index.html#projects">← All projects</a></div>
+</section>
+</main>
+
+<footer>© <span id="yr"></span> Abhinav Attri · IIT Kanpur</footer>
+<script src="script.js"></script>
+</body>
+</html>

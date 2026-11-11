@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HAQAGen — Abhinav Attri</title>
+<meta name="description" content="Abhinav Attri — M.Tech (AI for Sustainability) at IIT Kanpur. AI-physics hybrid modelling, computer vision, and agentic AI.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Manrope:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script>try{if(sessionStorage.getItem('theme')==='dark')document.documentElement.dataset.theme='dark'}catch(e){}</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="sub-page">
+
+<canvas id="bg" aria-hidden="true"></canvas>
+<div id="progress"></div>
+<header class="nav">
+  <a href="index.html" class="brand">AA<span>.</span></a>
+  <nav>
+    <a href="index.html#top">Home</a>
+    <a href="index.html#research">Research</a>
+    <a href="index.html#projects">Projects</a>
+    <a href="index.html#education">Education</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+  <div class="nav-right">
+    <button id="theme" class="theme" type="button" role="switch" aria-checked="false" aria-label="Night theme" title="Toggle night theme">
+      <span class="ico sun">☀</span><span class="ico moon">☾</span><span class="knob"></span>
+    </button>
+    <a class="btn small" href="assets/Abhinav_Resume.pdf" download>Resume ↓</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="page">
+  <a class="back reveal" href="index.html#research">← Back to research</a>
+  <div class="tagrow reveal"><span class="tag hot">B.S. Thesis · IISER Bhopal</span><span class="tag">Published · WACV 2026</span></div>
+  <h1 class="reveal">HAQAGen</h1>
+  <p class="lead reveal">NIR-to-RGB spectral image colorization</p>
+  <div class="overview reveal"><h4>Overview</h4><p>Near-infrared cameras capture scenes that visible-light cameras cannot, but their images carry no colour. HAQAGen is a NIR-to-RGB colorization framework that targets two weaknesses of earlier models: globally consistent colour and fine texture at native resolution. The paper, “Histogram Assisted Quality Aware Generative Model for Resolution Invariant NIR Image Colorization”, was accepted at the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) 2026.</p></div>
+  <div class="metrics reveal"><div><b>24.96 dB</b><span>PSNR</span></div><div><b>34.6%</b><span>LPIPS reduction (up to)</span></div><div><b>23.3%</b><span>AE reduction (up to)</span></div><div><b>4</b><span>benchmarks</span></div></div>
+  <div class="detail"><div class="card reveal"><span class="mono">01</span><h3>Architecture</h3><p>Extends a Mamba-based (ColorMamba) backbone with a dual-branch RGB–HSV generator and SPADE-conditioned decoding for improved local chromatic consistency.</p></div><div class="card reveal"><span class="mono">02</span><h3>Training objective</h3><p>A composite objective combining a differentiable histogram (CDF) loss, a VGG-19 perceptual loss and frozen-autoencoder texture supervision — enforcing global chromatic consistency while preserving fine-grained textures.</p></div><div class="card reveal"><span class="mono">03</span><h3>Inference</h3><p>A resolution-invariant sliding-window pipeline with Hanning blending for seam-free processing at native resolution.</p></div></div>
+  <div class="cta reveal"><a class="btn" href="https://arxiv.org/abs/2601.01103" target="_blank" rel="noopener">Read the paper on arXiv ↗</a><a class="btn ghost" href="index.html#research">← All research</a></div>
+</section>
+</main>
+
+<footer>© <span id="yr"></span> Abhinav Attri · IIT Kanpur</footer>
+<script src="script.js"></script>
+</body>
+</html>
